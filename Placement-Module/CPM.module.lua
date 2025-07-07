@@ -281,10 +281,9 @@ function CPM:Place()
 	
 end
 
-function CPM:Rotate(Plot: Part)
+function CPM:Rotate()
 	
 	CurrentRotation = ((CurrentRotation + 90)%360)
-	--print(CurrentRotation)
 	
 end
 
