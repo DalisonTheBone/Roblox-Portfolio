@@ -10,6 +10,7 @@ A simple-to-use module for placing objects in Roblox with animations and sound e
 - Ease of use
 
 ## Setup
+**NOTE**: if your having problems check out the example place file.
 1. **Setup Directory Locations**: Change the directorys of each variable that has this comment to have proper directorys.
   ```lua
   -- (Folder, Remote, Module) location
