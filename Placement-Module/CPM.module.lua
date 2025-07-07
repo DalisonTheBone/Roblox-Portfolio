@@ -56,12 +56,13 @@ local PlacedObjects    = Workspace.PlacedObjects
 local Camera           = Workspace.CurrentCamera
 local Modules          = ReplicatedStorage.Modules
 local CurrentRotation  = 0
-local Remotes = ReplicatedStorage.Remotes
+local Remotes          = ReplicatedStorage.Remotes
+local Sounds           = ReplicatedStorage.SFX
+local SoundNotPlaying  = true
+
 local ObjectModel: Model
 local CurrentLocation
 local CurrentLocation2
-local Sounds           = ReplicatedStorage.SFX
-local SoundNotPlaying = true
 
 -- Remotes
 local PlaceRemote = Remotes.RemoteEvents.Place
@@ -125,7 +126,7 @@ function CPM:StartPlacement(ObjectName: string, Grid: number, Plot: Instance)
 
 		end
 
-		local function GetPlacementXYZ(Grid: number, Object: Model, Plot: Part)
+		local function GetPlacementXYZ(Grid: number, Object: Model, Plot: Part) -- require(game.StarterGui.CPM):StartPlacement("TestName", 1, workspace.Plots.Plot1.Plot)
 
 			local HitBox: Part = Object.PrimaryPart
 
@@ -231,6 +232,7 @@ function CPM:StartPlacement(ObjectName: string, Grid: number, Plot: Instance)
 
 		while task.wait() do
 			
+			--task.spawn(function()
 			if PlacementSettings.PlacementModeActive then
 				
 				if NotHoveringInGui() then
@@ -254,6 +256,8 @@ function CPM:StartPlacement(ObjectName: string, Grid: number, Plot: Instance)
 				break
 					
 			end
+
+			--end)
 
 		end
 		
@@ -280,7 +284,8 @@ end
 function CPM:Rotate(Plot: Part)
 	
 	CurrentRotation = ((CurrentRotation + 90)%360)
-
+	--print(CurrentRotation)
+	
 end
 
 function CPM:EndPlacement()
@@ -296,3 +301,4 @@ function CPM:EndPlacement()
 end
 
 return CPM
+-- workspace.Chair:PivotTo(workspace.Chair:GetPivot() * CFrame.Angles(0, math.rad(90), 0))
