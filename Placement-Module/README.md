@@ -4,6 +4,9 @@ A simple-to-use module for placing objects in Roblox with animations and sound e
 ## Features
 - Animations
 - Sound Effects
+- Plot System
+- Grid System
+- Collision System
 - Ease of use
 
 ## Setup
