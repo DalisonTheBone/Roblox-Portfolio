@@ -21,7 +21,41 @@ A simple-to-use module for placing objects in Roblox with animations and sound e
 PlaceRemote.OnServerEvent:Connect(function(Player: Player, ObjectName: string, CurrentLocation: CFrame, CurrentRotation: number))
 ```
   - Script should be now set up
-3. **Adding a Model**: on line 53 of CPM where the objects folder is specified, go to that folder and do the following.
+
+3. **Setting Up Player Folder**: Setting up the folder in the placed objects folder for the player.
+   - in a server script write this code:
+  ```lua
+    
+-- Services
+local Players = game:GetService("Players")
+
+-- Paths
+local PlacedObjects = workspace.PlacedObjects
+
+-- Functions
+function OnPlayerJoin(Player: Player)
+	
+	local PlayerFolder = Instance.new("Folder")
+	PlayerFolder.Name = Player.Name
+	PlayerFolder.Parent = PlacedObjects
+	
+end
+
+function OnPlayerLeave(Player: Player)
+	
+	PlacedObjects[Player.Name]:Destroy()
+	
+end
+
+-- Events
+Players.PlayerAdded:Connect(OnPlayerJoin)
+Players.PlayerRemoving:Connect(OnPlayerLeave)
+```
+  - Replace the PlacedObjects directory with the path to the folder you have it in.
+  - this script will add and remove the player folder witch contains the players placed objects.
+
+    
+5. **Adding a Model**: on line 53 of CPM where the objects folder is specified, go to that folder and do the following.
   - Add a folder
   - The name will be the ObjectName that will be used to place it
   - under that folder put the model of the object.
