@@ -1,5 +1,5 @@
 # bbmodel Loader
-A project that can load models in the .bbmodel format in roblox, allowing the use of models created in block bench.
+A project that can load models in the .bbmodel format in roblox, allowing the use of models created in block bench. Probably my favorite project i have worked on.
 
 ## Credits
 - **Compression Module**: Written by Haoqian He, Written by Haoqian He
