@@ -18,10 +18,15 @@ Hello, I'm DalaisonTheBone. I'm a programmer who has been programming for 3+ yea
   - USD / CAD (Prefered)
   - Robux
 
-**Payment Type**:
+**Payment Types**:
   - Per Script / System (Prefered)
   - Per Hour
   - After full completion
+
+**Job Types**:
+  - Commision (Prefered)
+  - Part Time
+  - Full Time
 
 **Contact Me**
 - **Discord**: @DalaisonTheBone (Prefered)
