@@ -49,15 +49,15 @@ local PlacementSettings = {
 }
 
 local LocalPlayer      = Players.LocalPlayer
-local PlaceableObjects = ReplicatedStorage.PlaceableObjects
-local Objects          = PlaceableObjects.Objects
-local Temp             = Workspace.Temp
-local PlacedObjects    = Workspace.PlacedObjects
+local PlaceableObjects = ReplicatedStorage.PlaceableObjects -- Folder location
+local Objects          = PlaceableObjects.Objects           -- Folder location
+local Temp             = Workspace.Temp                     -- Folder location
+local PlacedObjects    = Workspace.PlacedObjects            -- Folder location
 local Camera           = Workspace.CurrentCamera
-local Modules          = ReplicatedStorage.Modules
+local Modules          = ReplicatedStorage.Modules          -- Folder location
 local CurrentRotation  = 0
-local Remotes          = ReplicatedStorage.Remotes
-local Sounds           = ReplicatedStorage.SFX
+local Remotes          = ReplicatedStorage.Remotes          -- Folder location
+local Sounds           = ReplicatedStorage.SFX              -- Folder location (Needs two sounds as children: Move, Place.)
 local SoundNotPlaying  = true
 
 local ObjectModel: Model
@@ -65,10 +65,10 @@ local CurrentLocation
 local CurrentLocation2
 
 -- Remotes
-local PlaceRemote = Remotes.RemoteEvents.Place
+local PlaceRemote = Remotes.RemoteEvents.Place -- Remote location
 
 -- Modules
-local TweenModel = require(Modules.TweenModel)
+local TweenModel = require(Modules.TweenModel) -- Module location
 
 -- Functions
 function CPM:StartPlacement(ObjectName: string, Grid: number, Plot: Instance) 
