@@ -1,6 +1,6 @@
 # Roblox Portfolio
 Hello, I'm DalaisonTheBone. I'm a programmer who has been programming for 3+ years. Most fluent in Luau but can program in NodeJs and Python no problem.
-**NOTE**: You can view some of my places [here.](Solo-Projects/README.md)
+**NOTE**: You can view some of my places [here](Solo-Projects/README.md), and can go to anyone of the folders to see examples of my coding skills.
 
 ## Scripting Skills
 - A lot of experience in solo projects.
