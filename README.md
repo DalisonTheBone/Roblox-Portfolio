@@ -32,3 +32,4 @@ Hello, I'm DalaisonTheBone. I'm a programmer who has been programming for 3+ yea
 **Contact Me**
 - **Discord**: @DalaisonTheBone (Prefered)
 - **Twiter**: @DalaisonTheBone (Dont check often)
+- **Email**: contact@dalaisonthebone.org
