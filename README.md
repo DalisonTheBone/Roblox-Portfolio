@@ -5,8 +5,10 @@ Hello, I'm DalaisonTheBone. I'm a programmer who has been programming for 3+ yea
 ## Scripting Skills
 - A lot of experience in solo projects.
 - Writes clean, easy to debug / modify code.
+- 3+ years of experience
+- Overal programming for 6+ years
 - Have experience with Roblox's open cloud API and web API
-- can code well in NodeJs
+- Can code well in NodeJs, and Python
 - Use functional programming paradime
 - Usaly use pascal case for everything but can adapt that to other styles
 
